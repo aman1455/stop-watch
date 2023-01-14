@@ -1,0 +1,84 @@
+
+
+body{
+    background-color: #2c3e50;
+    color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.continer{ height: 400px;
+    width: 400px;
+    border: 5px solid transparent;
+    color: silver;
+    padding: auto;
+    border-radius: 50%;
+    animation: animate 5s linear infinite, ease-out  ;
+    box-shadow: 0 0 20px #00FF7F, 0 0 40px #00FF7F;
+    
+    
+}
+
+@keyframes animate
+{
+0%{
+    box-shadow: 0 0 20px #00FF7F, 0 0 30px #00FF7F;}
+50%{
+    box-shadow: 0 0 30px #00FF7F, 0 0 40px #00FF7F;}
+100%{
+    box-shadow: 0 0 40px #00FF7F, 0 0 50px #00FF7F;
+}
+
+
+}
+
+
+.timer{ margin-top: 170px;
+    margin-left: 50px;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.Text{
+    font-size: 5rem;
+}
+
+.btns{ margin-top: 250px;
+    margin-left: 50px;
+    
+    
+ }
+
+ .btn{ 
+    color: #fff;
+    background-color: #0d2236;
+    margin: 0px 5px;
+    padding: 7px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+ }
+
+ #stop:hover{
+    color: rgb(251, 32, 32);
+    border: 1px solid rgb(246, 21, 21);
+    transition: 0.5s;
+    box-shadow: 0 0 20px red;
+ }
+
+ #start:hover{
+    color: rgb(0, 190, 0);
+    border: 1px solid rgb(2, 191, 2);
+    transition: 0.5s;
+    box-shadow: 0 0 20px rgb(2, 191, 2);
+ }
+
+
+ #reset:hover{
+    color: orange;
+    border: 1px solid orange;
+    transition: 0.7s ;
+    box-shadow: 0 0 20px orange;
+ }
